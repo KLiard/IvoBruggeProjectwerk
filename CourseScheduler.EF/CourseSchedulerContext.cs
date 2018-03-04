@@ -30,5 +30,10 @@ namespace CourseScheduler.EF
                 .HasColumnType(nameof(DbType.Int32))
                 .IsRequired();
         }
+
+        public virtual void Commit()
+        {
+            SaveChanges();
+        }
     }
 }
