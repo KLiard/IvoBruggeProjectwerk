@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseScheduler.Api", "CourseScheduler.Api\CourseScheduler.Api.csproj", "{FDCEEBDF-0AAB-4D41-83D8-C3A2F1BA65D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseScheduler.Api", "CourseScheduler.Api\CourseScheduler.Api.csproj", "{FDCEEBDF-0AAB-4D41-83D8-C3A2F1BA65D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{3A109A92-65A5-48FF-94BE-862EB1B12E7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{ECFA0BD9-2E3D-4006-89B6-3E19F133BF0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{54BE8199-86FA-4DBB-885E-6781464742B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{5C78D252-AFAA-4D9E-BBF5-521DC050EDD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDCEEBDF-0AAB-4D41-83D8-C3A2F1BA65D5} = {54BE8199-86FA-4DBB-885E-6781464742B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7230DDE1-B26D-4863-AA82-EB4A9C9A3375}
