@@ -27,7 +27,7 @@ namespace CourseScheduler.EF
 
             modelBuilder.Entity<Module>()
                 .Property(m => m.Studierichting)
-                .HasColumnType(nameof(DbType.String))
+                .HasColumnType(nameof(DbType.Int32))
                 .IsRequired();
         }
     }
