@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseScheduler.Resources",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseScheduler.Autofac", "CourseScheduler.Autofac\CourseScheduler.Autofac.csproj", "{4EBBF1C1-2EE3-4399-AEE8-499741A34CE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseScheduler.AutoMapper", "CourseScheduler.AutoMapper\CourseScheduler.AutoMapper.csproj", "{C5E59358-4711-4B0E-BBFB-D5105F786457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseScheduler.AutoMapper", "CourseScheduler.AutoMapper\CourseScheduler.AutoMapper.csproj", "{C5E59358-4711-4B0E-BBFB-D5105F786457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseScheduler.Dto", "CourseScheduler.DTO\CourseScheduler.Dto.csproj", "{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseScheduler.Dto", "CourseScheduler.DTO\CourseScheduler.Dto.csproj", "{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseScheduler.ViewModels", "CourseScheduler.ViewModels\CourseScheduler.ViewModels.csproj", "{A8B3BF6D-3E75-4FCE-9345-B1F52322A183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B3BF6D-3E75-4FCE-9345-B1F52322A183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B3BF6D-3E75-4FCE-9345-B1F52322A183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B3BF6D-3E75-4FCE-9345-B1F52322A183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B3BF6D-3E75-4FCE-9345-B1F52322A183}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{4EBBF1C1-2EE3-4399-AEE8-499741A34CE2} = {ECFA0BD9-2E3D-4006-89B6-3E19F133BF0E}
 		{C5E59358-4711-4B0E-BBFB-D5105F786457} = {ECFA0BD9-2E3D-4006-89B6-3E19F133BF0E}
 		{C5FA1202-B8AB-4DAE-BE92-2697D73ABE80} = {54BE8199-86FA-4DBB-885E-6781464742B9}
+		{A8B3BF6D-3E75-4FCE-9345-B1F52322A183} = {3A109A92-65A5-48FF-94BE-862EB1B12E7A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7230DDE1-B26D-4863-AA82-EB4A9C9A3375}
