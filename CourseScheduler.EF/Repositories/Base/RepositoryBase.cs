@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using CourseScheduler.EF.Factories.Contracts;
 
 namespace CourseScheduler.EF.Repositories.Base
 {
@@ -11,10 +12,15 @@ namespace CourseScheduler.EF.Repositories.Base
     {
         private readonly DbSet<TEntity> _dbSet;
 
-        public DbContext DbContext => new CourseSchedulerContext();
+        private CourseSchedulerContext _dbContext;
 
-        public RepositoryBase()
+        protected IDbFactory DbFactory { get; }
+
+        public DbContext DbContext => _dbContext ?? (_dbContext = DbFactory.Init());
+
+        public RepositoryBase(IDbFactory dbFactory)
         {
+            DbFactory = dbFactory;
             _dbSet = DbContext.Set<TEntity>();
         }
 

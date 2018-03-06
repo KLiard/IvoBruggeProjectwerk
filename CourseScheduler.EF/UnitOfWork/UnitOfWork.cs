@@ -1,15 +1,25 @@
 ﻿using CourseScheduler.Core.UnitOfWork.Contracts;
+using CourseScheduler.EF.Factories.Contracts;
 
 namespace CourseScheduler.EF.UnitOfWork
 {
     public class UnitOfWork
         : IUnitOfWork
     {
-        public CourseSchedulerContext DbContext => new CourseSchedulerContext();
+        private readonly IDbFactory _dbFactory;
+
+        private CourseSchedulerContext _dbContext;
+
+        public CourseSchedulerContext DbContext => _dbContext ?? (_dbContext = _dbFactory.Init());
+
+        public UnitOfWork(IDbFactory dbFactory)
+        {
+            _dbFactory = dbFactory;
+        }
 
         public void Commit()
         {
-            DbContext.Commit();
+            _dbContext.Commit();
         }
     }
 }
