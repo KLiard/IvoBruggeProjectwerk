@@ -19,6 +19,11 @@ namespace CourseScheduler.Autofac
                 .AsImplementedInterfaces()
                 .InstancePerRequest();
 
+            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+                .Where(b => b.Name.EndsWith("Factory"))
+                .AsImplementedInterfaces()
+                .InstancePerRequest();
+
             builder.RegisterType<UnitOfWork>()
                 .As<IUnitOfWork>()
                 .InstancePerRequest();
