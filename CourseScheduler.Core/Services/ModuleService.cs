@@ -3,12 +3,12 @@ using CourseScheduler.Core.Services.Contracts;
 
 namespace CourseScheduler.Core.Services
 {
-    public class ModuleDataService
-        : IModuleDataService
+    public class ModuleService
+        : IModuleService
     {
         private readonly IModuleRepository _moduleRepository;
 
-        public ModuleDataService(IModuleRepository moduleRepository)
+        public ModuleService(IModuleRepository moduleRepository)
         {
             _moduleRepository = moduleRepository;
         }
